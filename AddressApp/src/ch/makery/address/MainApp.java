@@ -29,7 +29,6 @@ import ch.makery.address.view.RootLayoutController;
 
 public class MainApp extends Application {
 	
-	 // ... AFTER THE OTHER VARIABLES ...
 
     /**
      * The data as an observable list of Persons.
@@ -60,7 +59,7 @@ public class MainApp extends Application {
         return personData;
     }
 
-    // ... THE REST OF THE CLASS ...
+
 	
 	
 
@@ -72,7 +71,7 @@ public class MainApp extends Application {
         this.primaryStage = primaryStage;
         this.primaryStage.setTitle("AddressApp");
 
-        // Set the application icon.
+       
         this.primaryStage.getIcons().add(new Image("file:resources/images/if_Address_Book_86957.png"));
 
         initRootLayout();
@@ -80,13 +79,10 @@ public class MainApp extends Application {
         showPersonOverview();
     }
 
-    /**
-     * Initializes the root layout and tries to load the last opened
-     * person file.
-     */
+
     public void initRootLayout() {
         try {
-            // Load root layout from fxml file.
+            
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(MainApp.class
                     .getResource("view/RootLayout.fxml"));
